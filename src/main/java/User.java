@@ -1,8 +1,14 @@
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 
-@Data public class User {
-    private final String firstName;
-    private final String lastName;
-    private final String email;
-
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class User {
+    private String firstName;
+    private String lastName;
+    private String email;
 }
